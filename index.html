@@ -105,11 +105,11 @@
                 &lt;div id="page"&gt; <br>
                 &nbsp;&nbsp;&lt;div class="logo"&gt;&lt;/div&gt; <br>
                 &nbsp;&nbsp;&lt;ul id="navigation"&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a>&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a>&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a>&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 4&lt;/a>&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 5&lt;/a>&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 4&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 5&lt;/a&gt;&lt;/li&gt;<br>
                 &nbsp;&nbsp;&lt;/ul&gt;<br>
                 &lt;/div&gt;
             </div>
@@ -196,17 +196,17 @@
 
                         <p>Для вложения элементов друг в друга используют дочерние элементы,
                             которые обозначают
-                            оператором <span>«>»</span> — знак «больше». Для
-                            примера, возьмем такое сокращение: <span>div>ul>li</span>, то
+                            оператором <span>«&gt;»</span> — знак «больше». Для
+                            примера, возьмем такое сокращение: <span>div&gt;ul&gt;li</span>, то
                             есть — div, в
                             который
                             вложен список ul и элементы списка li. Нажимаем
                             TAB и разворачиваем большой кусок кода. <br>
                             <br>
-                            Используется оператор > для вложения элементов друг в друга:
+                            Используется оператор &gt; для вложения элементов друг в друга:
                             <br>
                             <br>
-                            <strong>div>ul>li</strong>
+                            <strong>div&gt;ul&gt;li</strong>
                         </p>
                         <div class="ramka"> HTML
                             <br>
@@ -218,7 +218,7 @@
                             &lt;/div&gt;<br>
                             <br>
                         </div>
-                        <p>Оператор «>» используют для обозначения вложенности элементов друг в
+                        <p>Оператор «&gt;» используют для обозначения вложенности элементов друг в
                             друга. Пишем в
                             несколько
                             раз меньше текста и
@@ -249,9 +249,9 @@
                             <br>
                             <br>
                             &lt;header&gt;&lt;/header&gt; <br>
-                            &lt;main>&lt;/main&gt; <br>
-                            &lt;sidebar>&lt;/sidebar&gt; <br>
-                            &lt;footer>&lt;/footer&gt; <br>
+                            &lt;main&gt;&lt;/main&gt; <br>
+                            &lt;sidebar&gt;&lt;/sidebar&gt; <br>
+                            &lt;footer&gt;&lt;/footer&gt; <br>
                             <br>
                         </div>
                         <p>Для обозначения соседних элементов используют <span>оператор
@@ -266,12 +266,12 @@
                             уровнем вложенности. Допустим, хотим создать страницу
                             с header и footer, а между ними поместить основной контент и
                             боковую панель сайта с соседними операторами вложенности.
-                            Тогда прописываем: header+(div>main+aside)+footer — и
+                            Тогда прописываем: header+(div&gt;main+aside)+footer — и
                             разворачиваем полноценный кусок кода. <br>
                             <br>
                             Для группировки элементов используются круглые скобки <br>
                             <br>
-                            <strong>header+(div>main+aside)+footer</strong>
+                            <strong>header+(div&gt;main+aside)+footer</strong>
                         </p>
                         <div class="ramka"> HTML
                             <br>
@@ -300,7 +300,7 @@
                             <br>
                             Позволяет подняться на один уровень вверх по дереву. <br>
                             <br>
-                            <strong>header+div>main+asideb<span class="span">^</span>footer</strong>
+                            <strong>header+div&gt;main+asideb<span class="span">^</span>footer</strong>
                         </p>
                         <div class="ramka"> HTML
                             <br>
@@ -322,7 +322,7 @@
                             Другой пример: есть div, в него вложен ul и li, а «карет»
                             поднимает p на один уровень — выше ul, но внутри div. <br>
                             <br>
-                            <strong>div>ul>li^p</strong>
+                            <strong>div&gt;ul&gt;li^p</strong>
                         </p>
                         <div class="ramka"> HTML
                             <br>
@@ -342,7 +342,7 @@
                             требуется. И каждый раз элемент кода будет подниматься
                             выше по дереву. Допустим, если в том же примере поставить два
                             «карета», то p встанет на одном уровне с div. <br>
-                            <strong>div>ul>li <span class="span">^</span><span class="span">^</span>p</strong>
+                            <strong>div&gt;ul&gt;li <span class="span">^</span><span class="span">^</span>p</strong>
                         <div class="ramka"> HTML
                             <br>
                             <br>
@@ -385,16 +385,16 @@
                     <br>
                     С помощью оператора * можно задать, сколько раз должен выводиться элемент: <br>
                     <br>
-                    <strong> ul>li <span class="span">*3</span></strong>
+                    <strong> ul&gt;li <span class="span">*3</span></strong>
                 </p>
 
                 <div class="ramka"> HTML
                     <br>
                     <br>
-                    &lt;ul><br>
-                    &nbsp;&nbsp;&lt;li>&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&lt;li>&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&lt;li>&lt;/li&gt;<br>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
                     &lt;/ul&gt;
                     <br>
                 </div>
@@ -411,10 +411,10 @@
                     обернуть разметку страницы из предыдущего примера в какой-то wrapper, который
                     будет ограничивать ширину экрана. Тогда
                     добавляем div и вкладываем в него элементы из предыдущего примера:
-                    div>header+main+sidebar+footer. Жмем TAB и получаем
+                    div&gt;header+main+sidebar+footer. Жмем TAB и получаем
                     разметку с разными операторами. <br>
                     <br>
-                    <strong>div <span class="span">></span>header<span class="span">+</span>main<span
+                    <strong>div <span class="span">&gt;</span>header<span class="span">+</span>main<span
                             class="span">+</span>aside<span class="span">+</span>footer</strong>
                 </p>
 
@@ -537,7 +537,7 @@
                             <br>
                             <br>
 
-                            <strong>ul>li.item$*3</strong>
+                            <strong>ul&gt;li.item$*3</strong>
                         </p>
                         <p>Пишем знак <span class="span">«$»</span> и умножаем <span class="span">«*»</span> на три — к
                             каждому классу
@@ -559,7 +559,7 @@
                             изметить началное значение нумерации, используем
                             <span>модификатор собаки — «@» с минусом «-».</span>
                         </p>
-                        <p><strong>ul>li.item$@-*3</strong></p>
+                        <p><strong>ul&gt;li.item$@-*3</strong></p>
 
                         <div class="ramka"> HTML
                             <br>
@@ -568,7 +568,7 @@
                             &nbsp;&nbsp;&lt;li class="item3"&gt;&lt;/li&gt;<br>
                             &nbsp;&nbsp;&lt;li class="item2"&gt;&lt;/li&gt;<br>
                             &nbsp;&nbsp;&lt;li class="item1"&gt;&lt;/li&gt;<br>
-                            &lt;/ul>
+                            &lt;/ul&gt;
                             <br>
                         </div>
 
@@ -581,7 +581,7 @@
                             например, «тройку». Так, нумерация будет идти в
                             последовательности: <span>3-4-5 </span> и так далее. </p>
 
-                        <p><strong>ul>li.item$@3*3</strong></p>
+                        <p><strong>ul&gt;li.item$@3*3</strong></p>
 
                         <div class="ramka"> HTML
                             <br>
@@ -597,7 +597,7 @@
                             минус и нумерация пойдет в обратной последовательности с той
                             цифры, которую мы указали: <span>3-4-5</span>.</p>
 
-                        <p><strong>ul>li.item$@-3*3</strong></p>
+                        <p><strong>ul&gt;li.item$@-3*3</strong></p>
 
                         <div class="ramka"> HTML
                             <br>
@@ -733,7 +733,7 @@
             <h3 id="Content31"><a class="anchor" href="#Content31">#</a>Как настроить параметры Emmet?</h3>
             <p> Параметры Emmet можно настроить в файле settings.json в Visual Studio Code. Вы можете
                 получить доступ к этому файлу,
-                перейдя в меню Файл> Настройки> Настройки, а затем выполнив поиск <span>Emmet.</span>
+                перейдя в меню Файл&gt; Настройки&gt; Настройки, а затем выполнив поиск <span>Emmet.</span>
                 <br> Здесь вы можете настроить различные параметры
                 Emmet, такие как клавиша запуска, профили синтаксиса и переменные, используемые в
                 сокращениях Emmet.
@@ -832,6 +832,7 @@
                     <td>@command:editor.emmet.action.balanceOut</td>
                     <td>Emmet: HTML - Balance Outward <br>
                         Emmet: HTML - Баланс (Внешний)</td>
+                </tr>
 
                 <tr>
                     <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
@@ -976,6 +977,7 @@
                     <td>@command:editor.emmet.action.decrementNumberByOneTenth</td>
                     <td>Emmet: Number - Decrement - By 0,1 <br>
                         Emmet: Число - уменьшить на 0,1</td>
+                </tr>
 
                 <tr>
                     <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
