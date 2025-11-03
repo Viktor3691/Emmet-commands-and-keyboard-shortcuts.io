@@ -148,3 +148,12 @@ kbd {
 li {
   font-size: 18px;
 }
+.underline {
+  text-decoration: none;
+  color: #444;
+}
+th,
+tr {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
