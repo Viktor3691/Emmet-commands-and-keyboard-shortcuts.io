@@ -1109,6 +1109,147 @@
 
             <a href="#Content1">&lt;&lt;&lt;</a>
 
+
+            <h3 id="Content37"><a class="anchor" href="#Content37">#</a>Вычислить Математическое выражение
+            </h3>
+
+            <p>Emmet позволяет выполнять несложные арифметические вычисления прямо во время написания HTML или CSS кода,
+                не используя какие-либо сторонние калькуляторы. <br>
+                <br>
+                Нередко возникают ситуации, когда необходимо вычислить значения отступов, ширины
+                элементов и других значений; данная особенность освобождает разработчика от необходимости переключаться
+                между окнами редактора и калькулятора. <br>
+                <br>
+                Поддерживаются операции сложения, вычитания, умножения и деления.
+            </p>
+
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+            <li><kbd>Ctrl</kbd> + <kbd>=</kbd></li>
+
+            <img src="GIF/26.gif" alt="26gif" class="pictures1">
+            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+            <h3 id="Content38"><a class="anchor" href="#Content38">#</a>Перейдите к Соответствующей паре
+            </h3>
+            <p><strong>Go To Matching Pair</strong> — команда плагина Emmet, которая позволяет быстро найти закрывающий
+                тег</p>
+
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+
+            <img src="GIF/27.gif" alt="27gif" class="pictures1">
+            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+            <h3 id="Content39"><a class="anchor" href="#Content39">#</a>Перейти к следующей точке изменения
+            </h3>
+
+            <p><strong>«Go to Next Edit Point»</strong> — действие в инструменте Emmet, которое позволяет быстро
+                переходить между важными точками кода.
+                Оно работает для блоков HTML-кода и позволяет перемещаться между тегами, пустыми атрибутами, строками с
+                отступом и
+                другими точками.</p>
+
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+            <li><kbd>Ctrl</kbd> + <kbd>K</kbd></li>
+
+            <img src="GIF/28.gif" alt="28gif" class="pictures1">
+            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+            <h3 id="Content310"><a class="anchor" href="#Content310">#</a>Перейти к предыдущей точке изменения
+            </h3>
+
+            <p>«Previous Edit Point» — действие в инструменте Emmet для блоков кода HTML, которое позволяет быстро
+                переходить между
+                важными точками кода: между тегами, пустыми атрибутами, строками с отступом.</p>
+
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+            <li><kbd>Ctrl</kbd> + <kbd>J</kbd></li>
+
+            <img src="GIF/29.gif" alt="29gif" class="pictures1">
+            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+            <h3 id="Content311"><a class="anchor" href="#Content311">#</a>Объединить строки
+            </h3>
+
+            <p><strong>Merge Lines</strong> — действие в редакторе Emmet, которое объединяет выбранные строки в одну.
+                Это полезно, если контент разбит на несколько строк (например, в HTML или CSS) и нужно, чтобы он был в
+                одной строке.</p>
+
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+            <li><kbd>Ctrl</kbd> + <kbd>SHIFT</kbd> + <kbd>M</kbd></li>
+
+            <img src="GIF/30.gif" alt="30gif" class="pictures1">
+            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+            <h3 id="Content312"><a class="anchor" href="#Content312">#</a>Отразить CSS-значение
+            </h3>
+
+            <p><strong>«Reflect CSS Value»</strong> — действие в инструменте Emmet, которое автоматически копирует
+                значение свойства CSS из текущей позиции курсора во все варианты с префиксами поставщиков. При
+                необходимости может выполняться дополнительное преобразование.</p>
+
+            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+            <li><kbd>Ctrl</kbd> + <kbd>R</kbd></li>
+
+            <img src="GIF/31.gif" alt="31gif" class="pictures1">
+            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+
+            <textarea class="movie-def">
+div {
+	padding: 10px;
+
+	-webkit-transform: rotate(|45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+@@@
+tooltip: Modify value of CSS property
+wait: 500
+run: {command: 'delCharAfter', times: 2}
+wait: 500
+type: 50
+wait: 1000
+tooltip: {text: 'Run “Reflect CSS Value” action to copy current value to all its vendor-prefixed variants', wait: 6000}
+run: emmet.reflect_css_value ::: “Reflect CSS Value” (Cmd-B)
+@@@
+mode: text/css
+</textarea>
+
+
+
+
+            <div class="WrapwithAbbreviation">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#first">First Section</a></li>
+                        <li><a href="#second">Second Section</a></li>
+                        <li><a href="#cta">Get Started</a></li>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#first">First Section</a></li>
+                        <li><a href="#second">Second Section</a></li>
+                        <li><a href="#cta">Get Started</a></li>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#first">First Section</a></li>
+                        <li><a href="#second">Second Section</a></li>
+                        <li><a href="#cta">Get Started</a></li>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#first">First Section</a></li>
+                        <li><a href="#second">Second Section</a></li>
+                        <li><a href="#cta">Get Started</a></li>
+                    </ul>
+                </nav>
+            </div>
+
             <div class="WrapwithAbbreviation">
                 <nav id="nav">
                     <ul>
@@ -1129,76 +1270,23 @@
 
 
 
-            <h3 id="Content37"><a class="anchor" href="#Content37">#</a>Вычислить Математическое выражение
-            </h3>
-
-            <p>Emmet позволяет выполнять несложные арифметические вычисления прямо во время написания HTML или CSS кода,
-                не используя
-                какие-либо сторонние калькуляторы. <br>
-                <br>
-                Нередко возникают ситуации, когда необходимо вычислить значения отступов, ширины
-                элементов и других значений; данная особенность освобождает разработчика от необходимости переключаться
-                между окнами
-                редактора и калькулятора. <br>
-                <br>
-                Поддерживаются операции сложения, вычитания, умножения и деления.
-            </p>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>=</kbd></li>
-
-            <img src="GIF/26.gif" alt="26gif" class="pictures1">
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content38"><a class="anchor" href="#Content38">#</a>Перейдите к Соответствующей паре
-            </h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-
-            <img src="GIF/27.gif" alt="27gif" class="pictures1">
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content39"><a class="anchor" href="#Content39">#</a>Перейти к следующей точке изменения
-            </h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>K</kbd></li>
-
-            <img src="GIF/28.gif" alt="28gif" class="pictures1">
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content310"><a class="anchor" href="#Content310">#</a>Перейти к предыдущей точке изменения
-            </h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>J</kbd></li>
-
-            <img src="GIF/29.gif" alt="29gif" class="pictures1">
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content311"><a class="anchor" href="#Content311">#</a>Объединить строки
-            </h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>SHIFT</kbd> + <kbd>M</kbd></li>
-
-            <img src="GIF/30.gif" alt="30gif" class="pictures1">
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content312"><a class="anchor" href="#Content312">#</a>Отразить CSS-значение
-            </h3>
 
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>R</kbd></li>
 
-            <img src="GIF/31.gif" alt="31gif" class="pictures1">
-            <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+
+
+
 
 
             <h3 id="Content313"><a class="anchor" href="#Content313">#</a>Выбрать следующий элемент
