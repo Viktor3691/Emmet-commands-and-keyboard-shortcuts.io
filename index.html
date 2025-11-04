@@ -849,7 +849,9 @@
 
 
 
-                <h2 id="Content32"><a class="anchor" href="#Content32">#</a>Меню привязки ключей Emmet</h2>
+                <h2 id="Content32"><a class="anchor" href="#Content32">#</a><a
+                        href="https://marketplace.visualstudio.com/items?itemName=agutierrezr.emmet-keybindings"
+                        target="_blank" rel="noopener noreferrer" class="underline">Меню привязки ключей Emmet</a></h2>
 
                 <table border="1" width="100%">
                     <tr>
@@ -1186,106 +1188,73 @@
             <a href="#Content1">&lt;&lt;&lt;</a>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
             <h3 id="Content312"><a class="anchor" href="#Content312">#</a>Отразить CSS-значение
             </h3>
 
-            <p><strong>«Reflect CSS Value»</strong> — действие в инструменте Emmet, которое автоматически копирует
-                значение свойства CSS из текущей позиции курсора во все варианты с префиксами поставщиков. При
-                необходимости может выполняться дополнительное преобразование.</p>
+            <p><strong>«Reflect CSS Value»</strong> —Действие в Emmet позволяет копировать значение свойства CSS под
+                курсором в варианты с префиксом <span>vendor</span> с дополнительными преобразованиями, если это
+                необходимо.</p>
+
+            <p>Вендорные префиксы – это специальные короткие слова перед CSS свойствами, которые позволяют использовать
+                новые, ещё не стандартизированные возможности в разных браузерах. Они как временные паспорта для
+                экспериментов в веб-разработке.</p>
+
+            Эти префиксы решают важную проблему: они дают возможность разработчикам применять новейшие функции в своих
+            проектах , даже если эти функции ещё не получили широкой поддержки. Это как дать машине новейшие шины для
+            тест-драйва, не дожидаясь, пока они станут стандартом. <br>
+            <br>
+            Знание о вендорных префиксах упрощает написание программ, делая их более гибкими и современными. Это
+            позволяет создавать
+            веб-страницы, которые выглядят отлично и работают безупречно в различных браузерах , обеспечивая лучший опыт
+            для пользователей.
+
+            <h4>Основные вендорные префиксы и их значение</h4>
+            <p><strong>Префиксы браузеров</strong> играют ключевую роль в кроссбраузерной верстке. Знание, какой префикс
+                к какому браузеру относится, поможет вам обеспечить максимальную совместимость ваших веб-страниц.</p>
+
+            <ul>
+                <li><strong>-webkit</strong>- используется для Safari, Chrome и новых версий Opera.</li>
+                <li><strong>-moz</strong>- предназначен для Firefox.</li>
+                <li><strong>-ms</strong>- используется для Internet Explorer и старых версий Edge.</li>
+                <li><strong>-o</strong>- был нужен для старых версий Opera.</li>
+            </ul>
+
+            <textarea class="movie-def">
+.element {
+-webkit-transform: rotate(180deg); /* Для Chrome, Safari, новых версий Opera */
+-moz-transform: rotate(180deg); /* Для Firefox */
+-ms-transform: rotate(180deg); /* Для Internet Explorer */
+transform: rotate(180deg); /* Стандартный синтаксис для всех браузеров */
+}
+</textarea>
+            <br>
+            <br>
+            <div class="rotate">
+                -webkit-transform: rotate(180deg); /* Для Chrome, Safari, новых версий Opera */ <br>
+                -moz-transform: rotate(180deg); /* Для Firefox */<br>
+                -ms-transform: rotate(180deg); /* Для Internet Explorer */<br>
+                transform: rotate(180deg); /* Стандартный синтаксис для всех браузеров */<br>
+            </div>
 
             <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
             <li><kbd>Ctrl</kbd> + <kbd>R</kbd></li>
 
             <img src="GIF/31.gif" alt="31gif" class="pictures1">
+
             <a href="#Content1">&lt;&lt;&lt;</a>
-
-
-
-            <textarea class="movie-def">
-div {
-	padding: 10px;
-
-	-webkit-transform: rotate(|45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-@@@
-tooltip: Modify value of CSS property
-wait: 500
-run: {command: 'delCharAfter', times: 2}
-wait: 500
-type: 50
-wait: 1000
-tooltip: {text: 'Run “Reflect CSS Value” action to copy current value to all its vendor-prefixed variants', wait: 6000}
-run: emmet.reflect_css_value ::: “Reflect CSS Value” (Cmd-B)
-@@@
-mode: text/css
-</textarea>
-
-
-
-
-            <div class="WrapwithAbbreviation">
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#intro" class="active">Introduction</a></li>
-                        <li><a href="#first">First Section</a></li>
-                        <li><a href="#second">Second Section</a></li>
-                        <li><a href="#cta">Get Started</a></li>
-                        <li><a href="#intro" class="active">Introduction</a></li>
-                        <li><a href="#first">First Section</a></li>
-                        <li><a href="#second">Second Section</a></li>
-                        <li><a href="#cta">Get Started</a></li>
-                        <li><a href="#intro" class="active">Introduction</a></li>
-                        <li><a href="#first">First Section</a></li>
-                        <li><a href="#second">Second Section</a></li>
-                        <li><a href="#cta">Get Started</a></li>
-                        <li><a href="#intro" class="active">Introduction</a></li>
-                        <li><a href="#first">First Section</a></li>
-                        <li><a href="#second">Second Section</a></li>
-                        <li><a href="#cta">Get Started</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="WrapwithAbbreviation">
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#intro" class="active">Introduction</a></li>
-                        <li><a href="#first">First Section</a></li>
-                        <li><a href="#second">Second Section</a></li>
-                        <li><a href="#cta">Get Started</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1309,102 +1278,131 @@ mode: text/css
             <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content315"><a class="anchor" href="#Content315">#</a>Переключить комментарий</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>/</kbd></li>
-
-            <img src="GIF/34.gif" alt="34gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
-
-
-            <h3 id="Content316"><a class="anchor" href="#Content316">#</a>Обновить размер изображения</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>U</kbd></li>
-
-            <img src="GIF/35.gif" alt="35gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
+            <div class="WrapwithAbbreviation">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#first">First Section</a></li>
+                        <li><a href="#second"></a></li>
+                        <li><a href="#cta"></a></li>
+                    </ul>
+                </nav>
 
 
-            <h3 id="Content317"><a class="anchor" href="#Content317">#</a>Обновить тег</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>T</kbd></li>
-
-            <img src="GIF/36.gif" alt="36gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content318"><a class="anchor" href="#Content318">#</a>Перенести с сокращением</h3>
-
-            <p>«Wrap with Abbreviation» — функция в Emmet, которая принимает аббревиатуру, расширяет её и помещает
-                выбранный контент в
-                последний элемент сгенерированного фрагмента. <br>
-                Для использования функции нужно выделить контент и нажать</p>
 
 
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>W</kbd></li>
-            <p>Новый тег .WrapwithAbbreviation</p>
-            <img src="GIF/37.gif" alt="37gif" class="pictures1"><br>
-            <img src="GIF/37_1.gif" alt="37_1gif" class="pictures1"><br>
 
 
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content319"><a class="anchor" href="#Content319">#</a>Уменьшить на 0,1</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> +<kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd></li>
-
-            <img src="GIF/38.gif" alt="38gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
-
-            <h3 id="Content320"><a class="anchor" href="#Content320">#</a>Уменьшить на 1</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>↓</kbd></li>
-
-            <img src="GIF/39.gif" alt="39gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content321"><a class="anchor" href="#Content321">#</a>Уменьшить на 10</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd></li>
-
-            <img src="GIF/40.gif" alt="40gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content322"><a class="anchor" href="#Content322">#</a>Увеличить на 0,1</h3>
 
-            <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> +<kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd></li>
+                <h3 id="Content315"><a class="anchor" href="#Content315">#</a>Переключить комментарий</h3>
 
-            <img src="GIF/41.gif" alt="41gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
+                <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>/</kbd></li>
 
-
-            <h3 id="Content323"><a class="anchor" href="#Content323">#</a>Увеличить на 1</h3>
-
-            <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>↑</kbd></li>
-
-            <img src="GIF/42.gif" alt="gif42" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
+                <img src="GIF/34.gif" alt="34gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
 
 
-            <h3 id="Content324"><a class="anchor" href="#Content324">#</a>Увеличить на 10</h3>
+                <h3 id="Content316"><a class="anchor" href="#Content316">#</a>Обновить размер изображения</h3>
 
-            <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd></li>
-            <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>U</kbd></li>
 
-            <img src="GIF/43.gif" alt="43gif" class="pictures1"><br>
-            <a href="#Content1">&lt;&lt;&lt;</a>
+                <img src="GIF/35.gif" alt="35gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content317"><a class="anchor" href="#Content317">#</a>Обновить тег</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>T</kbd></li>
+
+                <img src="GIF/36.gif" alt="36gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content318"><a class="anchor" href="#Content318">#</a>Перенести с сокращением</h3>
+
+                <p>«Wrap with Abbreviation» — функция в Emmet, которая принимает аббревиатуру, расширяет её и помещает
+                    выбранный контент в
+                    последний элемент сгенерированного фрагмента. <br>
+                    Для использования функции нужно выделить контент и нажать</p>
+
+
+                <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>W</kbd></li>
+                <p>Новый тег .WrapwithAbbreviation</p>
+                <img src="GIF/37.gif" alt="37gif" class="pictures1"><br>
+                <img src="GIF/37_1.gif" alt="37_1gif" class="pictures1"><br>
+
+
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content319"><a class="anchor" href="#Content319">#</a>Уменьшить на 0,1</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> +<kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd></li>
+
+                <img src="GIF/38.gif" alt="38gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+                <h3 id="Content320"><a class="anchor" href="#Content320">#</a>Уменьшить на 1</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>↓</kbd></li>
+
+                <img src="GIF/39.gif" alt="39gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content321"><a class="anchor" href="#Content321">#</a>Уменьшить на 10</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd></li>
+
+                <img src="GIF/40.gif" alt="40gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content322"><a class="anchor" href="#Content322">#</a>Увеличить на 0,1</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> +<kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd></li>
+
+                <img src="GIF/41.gif" alt="41gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content323"><a class="anchor" href="#Content323">#</a>Увеличить на 1</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>↑</kbd></li>
+
+                <img src="GIF/42.gif" alt="gif42" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+
+                <h3 id="Content324"><a class="anchor" href="#Content324">#</a>Увеличить на 10</h3>
+
+                <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd></li>
+                <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd></li>
+
+                <img src="GIF/43.gif" alt="43gif" class="pictures1"><br>
+                <a href="#Content1">&lt;&lt;&lt;</a>
+
+            </div>
+
+
+
 
         </div>
 

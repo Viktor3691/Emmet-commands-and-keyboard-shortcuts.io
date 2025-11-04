@@ -157,3 +157,16 @@ tr {
   font-family: "Times New Roman", Times, serif;
   font-size: 14px;
 }
+
+.rotate {
+  -webkit-transform: rotate(
+    180deg
+  ); /* Для Chrome, Safari, новых версий Opera */
+  -moz-transform: rotate(180deg); /* Для Firefox */
+  -ms-transform: rotate(180deg); /* Для Internet Explorer */
+  transform: rotate(180deg); /* Стандартный синтаксис для всех браузеров */
+}
+.movie-def {
+  width: 600px;
+  height: 120px;
+}
