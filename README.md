@@ -1,38 +1,8 @@
 ﻿# Emmet-commands-and-Keyboard-Shortcuts.io
 
-    <title>Команды и сочетания клавиш Emmet</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-    <div class="container">
-
-        <div class="calendar">
-            <div class="calendar-header calendar-month">Октябрь</div>
-            <div class="calendar-body">
-                <div class="calendar-weekday">Вторник</div>
-                <div class="calendar-day">21</div>
-                <div class="calendar-year">2025</div>
-            </div>
-        </div>
-        <script>
-            const now = new Date();
-            const month = now.toLocaleString('default', { month: 'long' });
-            const weekday = now.toLocaleString('default', { weekday: 'long' });
-            const day = now.toLocaleString('default', { day: '2-digit' });
-            const year = now.toLocaleString('default', { year: 'numeric' });
-
-            document.querySelector('.calendar-month').textContent = month;
-            document.querySelector('.calendar-weekday').textContent = weekday;
-            document.querySelector('.calendar-day').textContent = day;
-            document.querySelector('.calendar-year').textContent = year;
-        </script>
-
-        <h1>Продвинутый HTML и CSS</h1>
-
         <img src="IMG/53.png" alt="53" class="pictures1">
 
-        <h2 id="Content1"><img src="./IMG/icon.png" alt="icon" width="20"> Содержание</h2>
+        ##Содержание
 
 
         <ol>
