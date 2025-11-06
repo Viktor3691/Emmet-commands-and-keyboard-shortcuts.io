@@ -16,7 +16,16 @@
       "h2",
       "h3",
       "h4",
-      "h5"
+      "h5",
+      "kbd",
+      "i",
+      "footer",
+      "foo",
+      "table",
+      "tr",
+      "td",
+      "th",
+      "textarea"
     ]
   }
 }
