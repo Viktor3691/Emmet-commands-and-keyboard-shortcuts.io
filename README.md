@@ -197,7 +197,6 @@
 <p><a href="https://webdesign-master.ru/blog/html-css/2.html" target="_blank"
         rel="noopener noreferrer">Справочник EMMET
         сокращений для ускорения верстки</a><br>
-    "https://webdesign-master.ru/blog/html-css/2.html"
 </p>
 
 </div>
@@ -240,10 +239,8 @@ TAB и разворачиваем большой кусок кода. <br>
 <br>
 </div>
 <p>Оператор «&gt;» используют для обозначения вложенности элементов друг в
-    друга. Пишем в
-    несколько
-    раз меньше текста и
-    получаем полноценный кусок кода.</p>
+    друга. Пишем в    несколько    раз меньше текста и
+     получаем полноценный кусок кода.</p>
 </li>
 
 <li>
@@ -487,7 +484,7 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
     <br>
 </div>
 
-            <p><strong>.wrapper</strong></p>
+<p><strong>.wrapper</strong></p>
             <p>Пишем - через точку прописываем class wrapper, и Emmet
                 разворачивает тег div с соответствующим классом.</p>
             <div class="ramka"> HTML
@@ -497,25 +494,25 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
                 <br>
             </div>
 
-            <p>Можно комбинировать <br>
+<p>Можно комбинировать <br>
                 <br>
                 <strong>#id-wrap.wrapper</strong>
             </p>
 
-            <div class="ramka"> HTML
+<div class="ramka"> HTML
                 <br>
                 <br>
                 &lt;div id="id-wrap" class="wrapper"&gt;&lt;/div&gt;
                 <br>
             </div>
 
-            <p>Пишем id и class без тега — Emmet по-умолчанию развернет тег div.</p>
+<p>Пишем id и class без тега — Emmet по-умолчанию развернет тег div.</p>
         </li>
 
-        <li>
+<li>
             <h3>Настраиваемые атрибуты — [attr];</h3>
 
-            <p>Если хотим добавить какие-то настраиваемые атрибуты к элементу,
+<p>Если хотим добавить какие-то настраиваемые атрибуты к элементу,
                 используем оператор <span class="span">[attr] </span>— как в
                 CSS. Например, чтобы
                 указать тип кнопки disabled — «неактивна» — пишем в квадратных
@@ -525,24 +522,25 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
                 Можно использовать [attr] нотацию (как в CSS) для добавления
                 настраиваемых атрибутов к элементу:
             </p>
-            <p><strong>button <span class="span">[</span>type="button" disabled<span
+<p><strong>button <span class="span">[</span>type="button" disabled<span
                         class="span">]</span></strong></p>
 
-            <div class="ramka"> HTML
+<div class="ramka"> HTML
                 <br>
                 <br>
                 &lt;button type="button" disabled="disabled"&gt;&lt;/button&gt;
                 <br>
             </div>
 
-            <p>Пишем в квадратных скобках нужные атрибуты и плагин
+<p>Пишем в квадратных скобках нужные атрибуты и плагин
             разворачивает их  в код.</p>
 
-        </li>
-        <li>
-            <h3>Нумерация позиций — $.</h3>
+</li>
 
-            <p>В примере про умножение показывали, как с помощью знака «*»
+<li>
+<h3>Нумерация позиций — $.</h3>
+
+<p>В примере про умножение показывали, как с помощью знака «*»
                 развернуть несколько элементов. Теперь посмотрим, как каждый
                 класс обозначить цифрой — к примеру, от одного до трех. Для
                 этого пишем знак доллара «$» и умножаем на три. Так, к
@@ -554,13 +552,13 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
                 <br>
                 <br>
 
-                <strong>ul&gt;li.item$*3</strong>
+<strong>ul&gt;li.item$*3</strong>
             </p>
             <p>Пишем знак <span class="span">«$»</span> и умножаем
-            <span class="span">«*»</span> на три — к                каждому классу
-                добавляем цифра от одного до трех.</p>
+<span class="span">«\*»</span> на три — к каждому классу
+добавляем цифра от одного до трех.</p>
 
-            <div class="ramka"> HTML
+<div class="ramka"> HTML
                 <br>
                 <br>
                 &lt;ul&gt; <br>
@@ -572,13 +570,13 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
             </div>
             <br>
 
-            <p>С помощью модификатора @ можно изменить направление нумерации или
+<p>С помощью модификатора @ можно изменить направление нумерации или
                 изметить началное значение нумерации, используем
                 <span>модификатор собаки — «@» с минусом «-».</span>
             </p>
             <p><strong>ul&gt;li.item$@-*3</strong></p>
 
-            <div class="ramka"> HTML
+<div class="ramka"> HTML
                 <br>
                 <br>
                 &lt;ul&gt;<br>
@@ -589,7 +587,7 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
                 <br>
             </div>
 
-            <p>Модификатор «@» с минусом «-» изменил направление нумерации в
+<p>Модификатор «@» с минусом «-» изменил направление нумерации в
                 обратную сторону — от трех до одного.</p>
 
             <p>Также с помощью оператора собаки «@» можно указать, чтобы нумерация
@@ -600,7 +598,7 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
 
             <p><strong>ul&gt;li.item$@3*3</strong></p>
 
-            <div class="ramka"> HTML
+<div class="ramka"> HTML
                 <br>
                 <br>&lt;ul&gt;<br>
                 &nbsp;&nbsp;&lt;li class="item3"&gt;&lt;/li&gt;<br>
@@ -610,13 +608,13 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
                 <br>
             </div>
 
-            <p>Поставим перед «тройкой»
+<p>Поставим перед «тройкой»
                 минус и нумерация пойдет в обратной последовательности с той
                 цифры, которую мы указали: <span>3-4-5</span>.</p>
 
             <p><strong>ul&gt;li.item$@-3*3</strong></p>
 
-            <div class="ramka"> HTML
+<div class="ramka"> HTML
                 <br>
                 <br>
                 &lt;ul&gt;<br>
@@ -646,7 +644,7 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
     </p>
     <p><strong>p{Здесь какой-то текст}</strong></p>
 
-    <div class="ramka"> HTML
+<div class="ramka"> HTML
         <br>
         <br>
         &lt;p&gt;Здесь какой-то текст&lt;/p&gt;
@@ -705,7 +703,7 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
         <br>
     </div>
 
-    <p>Для быстрого написания CSS кода в Emmet существует большой набор
+<p>Для быстрого написания CSS кода в Emmet существует большой набор
     специальных сокращений свойств и их        значений. <br>
         Самый простой и эффективный способ использования этих сокращений
          — писать аббревиатуры, состоящие из        первых букв свойств и их значений,
@@ -716,23 +714,23 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
         <span class="span">tdn</span> <br>
         }
 
-        <br>
+<br>
     </div> развернется как:</p>
 
-    <div class="ramka"> CSS <br>
+<div class="ramka"> CSS <br>
         <br>
 
-        li {
-        font-size: 18px; <br>
-        <span class="span">text-decoration: none;</span> <br>
-        }
+li {
+font-size: 18px; <br>
+<span class="span">text-decoration: none;</span> <br>
+}
 
-        <br>
+<br>
 
-    </div>
+</div>
 
-    <i>этот материал изучен на сайте
-        <a href="https://tproger.ru/articles/kak-plagin-emmet-pomogaet-uskorit-rabotu-s-programmnym-kodom"
+<i>этот материал изучен на сайте
+<a href="https://tproger.ru/articles/kak-plagin-emmet-pomogaet-uskorit-rabotu-s-programmnym-kodom"
             target="_blank" rel="noopener noreferrer">tproger.ru</a></i>
 
 </div>
@@ -740,19 +738,19 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
 
 <div class="container_text">
 
-    <h2 id="Content3"><a class="anchor" href="#Content3">#</a>Emmet actions</h2>
+<h2 id="Content3"><a class="anchor" href="#Content3">#</a>Emmet actions</h2>
 
-    <p>Emmet предлагает множество полезных и экономящих время действий и
-    сочетаний клавиш. Emmet        предлагает уникальные        инструменты,
-     которые могут значительно улучшить процесс редактирования и очень полезны,
-        когда вам нужно отредактировать
-        HTML- и CSS-код, чтобы исправить ошибки и добавить новые функции. <br>
-        <br>
-        Некоторые действия
-        Emmet полезны для редактирования
-        существующего HTML-кода, например функция Wrap with Abbreviation.
-        С помощью этой функции        вы можете обернуть элементы   навигации в
-        меню навигации.
+<p>Emmet предлагает множество полезных и экономящих время действий и
+сочетаний клавиш. Emmet        предлагает уникальные        инструменты,
+которые могут значительно улучшить процесс редактирования и очень полезны,
+когда вам нужно отредактировать
+HTML- и CSS-код, чтобы исправить ошибки и добавить новые функции. <br>
+<br>
+Некоторые действия
+Emmet полезны для редактирования
+существующего HTML-кода, например функция Wrap with Abbreviation.
+С помощью этой функции        вы можете обернуть элементы   навигации в
+меню навигации.
     </p>
     <p>Среди других доступных действий:
     <ul>
@@ -766,22 +764,22 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
     <br>
     <a href="#Content1">&lt;&lt;&lt;</a>
 
-    <h3 id="Content31"><a class="anchor" href="#Content31">#</a>Как настроить
+<h3 id="Content31"><a class="anchor" href="#Content31">#</a>Как настроить
     параметры Emmet?</h3>
-    <p> Параметры Emmet можно настроить в файле settings.json в Visual Studio
+<p> Параметры Emmet можно настроить в файле settings.json в Visual Studio
     Code.     Вы можете        получить доступ к этому файлу,        перейдя в
      меню Файл&gt; Настройки&gt; Настройки, а затем выполнив поиск <span>Emmet.</span>
         <br> Здесь вы можете настроить различные параметры        Emmet,
         такие как клавиша запуска, профили синтаксиса и переменные, используемые
          в        сокращениях Emmet.
-    </p>
+</p>
 
-    <p>Входим в меню <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>p</kbd></p>
+<p>Входим в меню <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>p</kbd></p>
 
-    <img src="IMG/55.png" alt="55" class="pictures1">
-    <img src="IMG/56.png" alt="56" class="pictures1">
+<img src="IMG/55.png" alt="55" class="pictures1">
+<img src="IMG/56.png" alt="56" class="pictures1">
 
-    <a href="#Content1">&lt;&lt;&lt;</a>
+<a href="#Content1">&lt;&lt;&lt;</a>
 
 <h2 id="Content32"><a class="anchor" href="#Content32">#</a><a
 href="https://marketplace.visualstudio.com/items?itemName
@@ -795,25 +793,25 @@ href="https://marketplace.visualstudio.com/items?itemName
         <th> Название</th>
     </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>Backspace</kbd>
             </td>
             <td>@command:editor.emmet.action.removeTag</td>
             <td>Emmet: HTML - Remove Tag <br>
                 Emmet: Удалить тег</td>
-        </tr>
+</tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>I</kbd>
             </td>
             <td>@command:editor.emmet.action.balanceIn</td>
             <td>Emmet: HTML - Balance Inward <br>
                 Emmet: Баланс (Входящий)</td>
-        </tr>
+</tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>O</kbd>
             </td>
@@ -822,7 +820,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Баланс (Исходящий)</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>=</kbd>
             </td>
@@ -831,7 +829,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Вычислить математическое выражение</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>M</kbd>
             </td>
@@ -840,7 +838,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Перейти к Соответствующей паре</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>K</kbd>
             </td>
@@ -849,7 +847,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Перейти к следующей точке изменения</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>J</kbd>
             </td>
@@ -858,7 +856,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Перейти к предыдущей точке изменения</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>
             </td>
@@ -867,7 +865,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Объединить строки</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>R</kbd>
             </td>
@@ -876,7 +874,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Отразить CSS-значение</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd> <br>
                 <kbd>Ctrl</kbd> + <kbd>.</kbd>
             </td>
@@ -885,7 +883,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Выбрать следующий элемент</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>,</kbd>
             </td>
@@ -895,7 +893,7 @@ href="https://marketplace.visualstudio.com/items?itemName
             </td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>S</kbd>
             </td>
@@ -904,7 +902,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Разделить/объединить тег</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>/</kbd>
             </td>
@@ -914,7 +912,7 @@ href="https://marketplace.visualstudio.com/items?itemName
             </td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>U</kbd>
             </td>
@@ -923,7 +921,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Обновить размер изображения</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>T</kbd>
             </td>
@@ -932,7 +930,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Обновить тег</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl </kbd>+ <kbd>W</kbd>
             </td>
@@ -941,7 +939,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Перенести с сокращением</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd>
             </td>
@@ -950,7 +948,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Уменьшить на 0,1</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>↓</kbd>
             </td>
@@ -959,7 +957,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Уменьшить На 1</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd>
             </td>
@@ -968,7 +966,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Число - Уменьшить На 10</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>
             </td>
@@ -977,7 +975,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Увеличить на 0,1</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>↑</kbd>
             </td>
@@ -986,7 +984,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Увеличить на 1</td>
         </tr>
 
-        <tr>
+<tr>
             <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd><br>
                 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>
             </td>
@@ -995,7 +993,7 @@ href="https://marketplace.visualstudio.com/items?itemName
                 Emmet: Число - увеличить на 10</td>
         </tr>
 
-    </table><br>
+</table><br>
     <a href="#Content1">&lt;&lt;&lt;</a>
 
 </div>
@@ -1010,9 +1008,9 @@ href="https://marketplace.visualstudio.com/items?itemName
 <h3 id="Content34"><a class="anchor" href="#Content34">#</a>Удалить Тег</h3>
 
 <p>
-    С помощью Emmet можно упростить процесс удаления ненужных тегов. Достаточно
-     установить курсор на тот    тег,    который    необходимо удалить, и вызвать
-     команду нажатием клавиш:
+С помощью Emmet можно упростить процесс удаления ненужных тегов. Достаточно
+ установить курсор на тот    тег,    который    необходимо удалить, и вызвать
+команду нажатием клавиш:
 </p>
 
 <li><kbd>Ctrl</kbd> + <kbd>M</kbd></li>
