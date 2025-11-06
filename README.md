@@ -244,18 +244,18 @@ TAB и разворачиваем большой кусок кода. <br>
 </li>
 
 <li>
-    <h5>Соседние элементы</h5>
-    <p>Элементы, которые находятся друг под другом называют соседними и
-        обозначают оператором <span>+» — знак «плюс»</span>«. Допустим,
-        требуется написать типовой макет страницы, <br>
-        где есть:
-    <ul>
+<h5>Соседние элементы</h5>
+<p>Элементы, которые находятся друг под другом называют соседними и
+обозначают оператором <span>+» — знак «плюс»</span>«. Допустим,
+требуется написать типовой макет страницы, <br>
+ где есть:
+<ul>
         <li><strong>header </strong>— «шапка» сайта;</li>
         <li><strong>main </strong>— основной контент;</li>
         <li><strong>sidebar</strong> — боковая панель сайта;</li>
         <li><strong>footer</strong> — «подвал» сайта.</li>
-    </ul>
-    </p>
+</ul>
+</p>
     <p>Пишем: header+main+sidebar+footer, нажимаем TAB и получаем каждый тег
         друг под другом. <br>
         <br>
@@ -276,7 +276,7 @@ TAB и разворачиваем большой кусок кода. <br>
  «+».</span> Emmet разворачивает небольшой текст в несколько тегов друг под другом.</p>
 </li>
 <li>
-    <h5>Группировка</h5>
+<h5>Группировка</h5>
     <p>С помощью <span>круглых скобок «()»</span> можем группировать
         элементы с разным
         уровнем вложенности. Допустим, хотим создать страницу
@@ -485,26 +485,26 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
 </div>
 
 <p><strong>.wrapper</strong></p>
-            <p>Пишем - через точку прописываем class wrapper, и Emmet
+<p>Пишем - через точку прописываем class wrapper, и Emmet
                 разворачивает тег div с соответствующим классом.</p>
-            <div class="ramka"> HTML
-                <br>
-                <br>
-                &lt;div class="wrapper"&gt;&lt;/div&gt;
-                <br>
-            </div>
+<div class="ramka"> HTML
+<br>
+<br>
+&lt;div class="wrapper"&gt;&lt;/div&gt;
+<br>
+</div>
 
 <p>Можно комбинировать <br>
-                <br>
-                <strong>#id-wrap.wrapper</strong>
-            </p>
+<br>
+<strong>#id-wrap.wrapper</strong>
+</p>
 
 <div class="ramka"> HTML
-                <br>
+<br>
                 <br>
                 &lt;div id="id-wrap" class="wrapper"&gt;&lt;/div&gt;
                 <br>
-            </div>
+</div>
 
 <p>Пишем id и class без тега — Emmet по-умолчанию развернет тег div.</p>
         </li>
@@ -541,16 +541,16 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
 <h3>Нумерация позиций — $.</h3>
 
 <p>В примере про умножение показывали, как с помощью знака «*»
-                развернуть несколько элементов. Теперь посмотрим, как каждый
-                класс обозначить цифрой — к примеру, от одного до трех. Для
-                этого пишем знак доллара «$» и умножаем на три. Так, к
-                каждому классу добавилась цифра. <br>
-                <br>
-                С помощью оператора умножения <span class="span"> *</span> можно
-                повторить элементы, оператор <span class="span">$</span> поможет
-                пронумеровать их
-                <br>
-                <br>
+развернуть несколько элементов. Теперь посмотрим, как каждый
+класс обозначить цифрой — к примеру, от одного до трех. Для
+этого пишем знак доллара «$» и умножаем на три. Так, к
+каждому классу добавилась цифра. <br>
+<br>
+С помощью оператора умножения <span class="span"> *</span> можно
+повторить элементы, оператор <span class="span">$</span> поможет
+пронумеровать их
+<br>
+<br>
 
 <strong>ul&gt;li.item$*3</strong>
             </p>
@@ -559,16 +559,16 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
 добавляем цифра от одного до трех.</p>
 
 <div class="ramka"> HTML
-                <br>
-                <br>
-                &lt;ul&gt; <br>
-                &nbsp;&nbsp; &lt;li class="item1"&gt;&lt;/li&gt;<br>
-                &nbsp;&nbsp; &lt;li class="item2"&gt;&lt;/li&gt;<br>
-                &nbsp;&nbsp; &lt;li class="item3"&gt;&lt;/li&gt;<br>
-                &lt;/ul&gt;
-                <br>
-            </div>
-            <br>
+<br>
+<br>
+&lt;ul&gt; <br>
+&nbsp;&nbsp; &lt;li class="item1"&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp; &lt;li class="item2"&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp; &lt;li class="item3"&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;
+<br>
+</div>
+<br>
 
 <p>С помощью модификатора @ можно изменить направление нумерации или
                 изметить началное значение нумерации, используем
@@ -577,26 +577,26 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
             <p><strong>ul&gt;li.item$@-*3</strong></p>
 
 <div class="ramka"> HTML
-                <br>
-                <br>
-                &lt;ul&gt;<br>
-                &nbsp;&nbsp;&lt;li class="item3"&gt;&lt;/li&gt;<br>
-                &nbsp;&nbsp;&lt;li class="item2"&gt;&lt;/li&gt;<br>
-                &nbsp;&nbsp;&lt;li class="item1"&gt;&lt;/li&gt;<br>
-                &lt;/ul&gt;
-                <br>
-            </div>
+<br>
+<br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&lt;li class="item3"&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li class="item2"&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li class="item1"&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;
+<br>
+</div>
 
 <p>Модификатор «@» с минусом «-» изменил направление нумерации в
                 обратную сторону — от трех до одного.</p>
 
-            <p>Также с помощью оператора собаки «@» можно указать, чтобы нумерация
+<p>Также с помощью оператора собаки «@» можно указать, чтобы нумерация
                 начиналась не с единицы, а с какой-то другой цифры. <br>
                 Тогда пишем «$», «@» и цифру, с которой хотим начать нумерацию —
                 например, «тройку». Так, нумерация будет идти в
                 последовательности: <span>3-4-5 </span> и так далее. </p>
 
-            <p><strong>ul&gt;li.item$@3*3</strong></p>
+<p><strong>ul&gt;li.item$@3*3</strong></p>
 
 <div class="ramka"> HTML
                 <br>
@@ -651,7 +651,7 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
         <br>
     </div>
 
-    <p>Текст внутри фигурных скобок Emmet разворачивает в текст, «обернутый» в указанный
+<p>Текст внутри фигурных скобок Emmet разворачивает в текст, «обернутый» в указанный
         перед скобками тег.</p>
 
 </div>
@@ -673,9 +673,9 @@ div&gt;header+main+sidebar+footer. Жмем TAB и получаем
         текст из 30 слов.
     </p>
 
-    <p><strong>lorem</strong></p>
+<p><strong>lorem</strong></p>
 
-    <div class="ramka"> HTML
+<div class="ramka"> HTML
         <br>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aspernatur
         ratione est repudiandae explicabo facilis in quas? Fugit, ipsam. Accusantium

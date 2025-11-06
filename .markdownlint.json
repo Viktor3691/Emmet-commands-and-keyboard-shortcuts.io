@@ -25,7 +25,8 @@
       "tr",
       "td",
       "th",
-      "textarea"
+      "textarea",
+      "strong"
     ]
   }
 }
